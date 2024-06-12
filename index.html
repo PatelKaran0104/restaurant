@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon_io/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+    <script src="https://kit.fontawesome.com/29d718d2e1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="hero-section" id="home">
+            <h1>Welcome to Our Restaurant</h1>
+            <p>Experience the finest dining with us</p>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="#home" class="navbar__link" id="homeLink"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#dishes" class="navbar__link" id="foodLink"><i class="fa-solid fa-carrot"></i></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#reviews" class="navbar__link" id="messageLink"><i class="fa-regular fa-comment-dots"></i></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#about" class="navbar__link" id="infoLink"><i class="fa-solid fa-info"></i></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#gallery" class="navbar__link" id="contactLink"><i class="fa-regular fa-images"></i></a>
+            </li>
+            <li class="navbar__item">
+                <a href="#contact" class="navbar__link" id="contactLink"><i class="fa-regular fa-address-card"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <nav>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#home">Home</a></li>
+                <li><a class="menu__item" href="#dishes">Dishes</a></li>
+                <li><a class="menu__item" href="#reviews">Reviews</a></li>
+                <li><a class="menu__item" href="#about">About Us</a></li>
+                <li><a class="menu__item" href="#gallery">Gallery</a></li>
+                <li><a class="menu__item" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <button id="theme-toggle" class="fa-regular fa-moon fa-2xx" title="Toggle theme" aria-label="Toggle theme"></button>
+    <button id="close-btn" class="fa fa-times fa-2x" title="Close" aria-label="Close" style="display: none;"></button>
+
+    <main>
+        <section id="dishes">
+            <h2>Our Delicious Dishes</h2>
+            <div class="dish-cards">
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=2799&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Burger">
+                    <h3>Burger</h3>
+                    <p>A perfectly grilled burger served with crispy lettuce, savory cheese, and our special sauce, all
+                        sandwiched between a soft, toasted bun.</p>
+
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1556761223-4c4282c73f77?q=80&w=2865&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Pasta">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>Classic Italian spaghetti carbonara made with bacon, eggs, and parmesan cheese.</p>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1607532941433-304659e8198a?q=80&w=2878&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Salad">
+                    <h3>Garden Salad</h3>
+                    <p>Fresh mixed greens with cherry tomatoes, cucumbers, and balsamic vinaigrette.</p>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1520080906273-ac3114063b21?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Cheesecake">
+                    <h3>New York Cheesecake</h3>
+                    <p>Creamy and rich New York-style cheesecake topped with strawberries.</p>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1545396872-a6682fc218ab?q=80&w=2720&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Chocolate Cake">
+                    <h3>Chocolate Lava Cake</h3>
+                    <p>Decadent chocolate lava cake served warm with vanilla ice cream.</p>
+                </div>
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1639744211487-b27e3551b07c?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Tiramisu">
+                    <h3>Tiramisu</h3>
+                    <p>Traditional Italian tiramisu made with layers of espresso-soaked ladyfingers and mascarpone
+                        cheese.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <div class="container">
+                <h2>Customer Reviews</h2>
+                <div class="review-carousel">
+                    <div class="review-card">
+                        <div class="review">
+                            <div class="reviewer-info">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww"
+                                    alt="Reviewer 1">
+                                <div class="reviewer-details">
+                                    <h3>John Doe</h3>
+                                    <p>Verified Customer</p>
+                                </div>
+                            </div>
+                            <p class="review-text">"The food here is amazing! I had the steak and it was cooked to
+                                perfection. The atmosphere is cozy and the service is excellent. Definitely coming
+                                back!"</p>
+                        </div>
+                    </div>
+                    <div class="review-card">
+                        <div class="review">
+                            <div class="reviewer-info">
+                                <img src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D"
+                                    alt="Reviewer 2">
+                                <div class="reviewer-details">
+                                    <h3>Jane Smith</h3>
+                                    <p>Food Enthusiast</p>
+                                </div>
+                            </div>
+                            <p class="review-text">"I tried the pasta carbonara and it was absolutely delicious. The
+                                flavors were well-balanced and the portion size was generous. Highly recommend!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <p>Welcome to our restaurant, where we serve delicious and authentic cuisine from around the world.
+                        Our experienced chefs use only the freshest ingredients to create mouthwatering dishes that will
+                        satisfy your taste buds.</p>
+                    <p>Whether you're in the mood for a hearty steak, a flavorful pasta, or a refreshing salad, we have
+                        something for everyone. Our menu features a wide variety of options, including vegetarian and
+                        gluten-free choices.</p>
+                    <p>At our restaurant, we believe in providing exceptional service to our customers. Our friendly
+                        staff is dedicated to ensuring that you have a memorable dining experience. From the moment you
+                        step through our doors, you'll be greeted with a warm welcome and attentive service.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="wrapper">
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+                <div class="item"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p class="info">Have a question or feedback? Get in touch with us:</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p><strong>Address:</strong> 123 Main Street, City, Country</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt fa-2x"></i>
+                    <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope fa-2x"></i>
+                    <p><strong>Email:</strong> info@restaurant.com</p>
+                </div>
+            </div>
+            <div class="social-media">
+                <p>Follow us on social media:</p>
+                <a href="https://www.youtube.com"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="https://instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://facebook.com"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://x.com"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://linkedin.com"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section">
+            <p>&copy; 2023-24 Our Restaurant. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
